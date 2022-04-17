@@ -1,6 +1,5 @@
 // Copyright 2022 Nazarov Nikita
 #include <gtest/gtest.h>
-
 #include "../../../modules/task_1/nazarov_n_simpson/simpson.h"
 
 double function1(const std::vector<double>& x) { return (x[0] * x[1]); }
