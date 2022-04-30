@@ -79,8 +79,7 @@ void countingSort(double* array, int size, int byteNum) {
     if (byteNum != 7) {
         for (int i = 0; i < size; i++)
             ans[offset[byteArray[8 * i + byteNum]]++] = array[i];
-    }
-    else {
+    } else {
         for (int i = 0; i < size; i++)
             if (byteArray[8 * i + byteNum] >= 128) {
                 ans[offset[byteArray[8 * i + byteNum]]--] = array[i];
@@ -107,8 +106,7 @@ std::vector<double> countingSort(std::vector<double> array, int numByte) {
     if (numByte != 7) {
         for (int i = 1; i < 256; i++)
             offset[i] = offset[i - 1] + counter[i - 1];
-    }
-    else {
+    } else {
         offset[255] = counter[255] - 1;
         for (int i = 254; i >= 128; i--)
             offset[i] = offset[i + 1] + counter[i];
@@ -119,13 +117,11 @@ std::vector<double> countingSort(std::vector<double> array, int numByte) {
     if (numByte != 7) {
         for (size_t i = 0; i < array.size(); i++)
             ans[offset[byteArray[8 * i + numByte]]++] = array[i];
-    }
-    else {
+    } else {
         for (size_t i = 0; i < array.size(); i++)
             if (byteArray[8 * i + numByte] >= 128) {
                 ans[offset[byteArray[8 * i + numByte]]--] = array[i];
-            }
-            else {
+            } else {
                 ans[offset[byteArray[8 * i + numByte]]++] = array[i];
             }
     }

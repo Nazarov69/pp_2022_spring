@@ -9,7 +9,7 @@
 #include <iostream>
 
 class task {
-public:
+ public:
     std::vector<task*> ref;
     int num_of_depends;
     virtual void execute() = 0;
@@ -21,7 +21,7 @@ class sortTask : public task {
     double* array;
     int index, size;
     std::vector<double> ans;
-public:
+ public:
     sortTask(double* array, int index, int size);
     void execute() override;
     void print() override {
@@ -33,7 +33,7 @@ public:
 class oddEvenTask : public task {
     double* array;
     int index, size;
-public:
+ public:
     oddEvenTask(double* array, int index, int size);
     void execute() override;
     void print() override {
@@ -45,7 +45,7 @@ public:
 class oddTask : public task {
     double* array;
     int index1, size1, index2, size2;
-public:
+ public:
     oddTask(double* array, int index1, int size1, int index2, int size2);
     void execute() override;
     void print() override {
@@ -57,7 +57,7 @@ public:
 class evenTask : public task {
     double* array;
     int index1, size1, index2, size2;
-public:
+ public:
     evenTask(double* array, int index1, int size1, int index2, int size2);
     void execute() override;
     void print() override {

@@ -55,22 +55,25 @@ TEST(Radix_Sort_Odd_Even_Merge, Can_Sort_Vector_With_Large_Numbers) {
     EXPECT_EQ(vec1, vec2);
 }
 
-//TEST(Gauss_Filter, Eff_Test) {
-//    std::vector<double> vec1 = getRandomVector(5000000, -500000, 500000);
-//    std::vector<double> vec2 = vec1;
-//    clock_t start, end;
-//    start = clock();
-//    vec1 = radixSortOddEvenMergeDoubleParallel(vec1);
-//    end = clock();
-//    double seconds = (static_cast<double>(end - start)) / CLOCKS_PER_SEC;
-//    std::cout << "seq " << seconds << std::endl;
-//    start = clock();
-//    vec2 = radixSortOddEvenMergeDoubles(vec2);
-//    end = clock();
-//    seconds = (static_cast<double>(end - start)) / CLOCKS_PER_SEC;
-//    std::cout << "par " << seconds << std::endl;
-//    ASSERT_EQ(1,1);
-//}
+/*
+TEST(Gauss_Filter, Eff_Test) {
+    std::vector<double> vec1 = getRandomVector(5000000, -500000, 500000);
+    std::vector<double> vec2 = vec1;
+    clock_t start, end;
+    start = clock();
+    vec1 = radixSortOddEvenMergeDoubleParallel(vec1);
+    end = clock();
+    double seconds = (static_cast<double>(end - start)) / CLOCKS_PER_SEC;
+    std::cout << "seq " << seconds << std::endl;
+    start = clock();
+    vec2 = radixSortOddEvenMergeDoubles(vec2);
+    end = clock();
+    seconds = (static_cast<double>(end - start)) / CLOCKS_PER_SEC;
+    std::cout << "par " << seconds << std::endl;
+    ASSERT_EQ(1,1);
+}
+*/
+
 
 int main(int argc, char** argv) {
     ::testing::InitGoogleTest(&argc, argv);
