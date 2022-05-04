@@ -22,7 +22,7 @@ double function5(const std::vector<double>& x) {
 TEST(Simpson, Dimension_2) {
   int dimension = 2;
   std::vector<std::pair<double, double>> borders{{1, 18}, {-7, 2}};
-  std::vector<int> steps(dimension, 100);
+  std::vector<int> steps(dimension, 1);
 
   ASSERT_NEAR(simpson(function1, borders, steps, 1), -3633.75, 0.0001);
 }
@@ -30,7 +30,7 @@ TEST(Simpson, Dimension_2) {
 TEST(Simpson, Dimension_3) {
   int dimension = 3;
   std::vector<std::pair<double, double>> borders{{1, 18}, {-7, 2}, {1, 3}};
-  std::vector<int> steps(dimension, 12);
+  std::vector<int> steps(dimension, 1);
 
   ASSERT_NEAR(simpson(function2, borders, steps, 1), -14535, 0.0001);
 }
@@ -39,7 +39,7 @@ TEST(Simpson, Dimension_4) {
   int dimension = 4;
   std::vector<std::pair<double, double>> borders{
       {1, 18}, {-7, 2}, {1, 3}, {7, 11}};
-  std::vector<int> steps(dimension, 4);
+  std::vector<int> steps(dimension, 1);
 
   ASSERT_NEAR(simpson(function3, borders, steps, 1), -523260, 0.0001);
 }
@@ -48,7 +48,7 @@ TEST(Simpson, Dimension_5) {
   int dimension = 5;
   std::vector<std::pair<double, double>> borders{
       {1, 18}, {-7, 2}, {1, 3}, {7, 11}, {0.1, 0.9}};
-  std::vector<int> steps(dimension, 2);
+  std::vector<int> steps(dimension, 1);
 
   ASSERT_NEAR(simpson(function4, borders, steps, 1), -209304, 0.0001);
 }
