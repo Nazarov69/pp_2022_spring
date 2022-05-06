@@ -70,7 +70,6 @@ class SimpsonFunc {
 
   void join(const SimpsonFunc& simpson) {
     integral_simpson += simpson.integral_simpson;
-    // printf("%lf\n", integral_simpson);
   }
   double Result() { return integral_simpson; }
 };
