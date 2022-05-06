@@ -30,7 +30,7 @@ TEST(Simpson, Dimension_2) {
 TEST(Simpson, Dimension_3) {
   int dimension = 3;
   std::vector<std::pair<double, double>> borders{{1, 18}, {-7, 2}, {1, 3}};
-  std::vector<int> steps(dimension, 1);
+  std::vector<int> steps(dimension, 2);
 
   ASSERT_NEAR(simpson(function2, borders, steps, 1), -14535, 0.0001);
 }
