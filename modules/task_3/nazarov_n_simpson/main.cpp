@@ -22,7 +22,7 @@ double function5(const std::vector<double>& x) {
 TEST(Simpson, Dimension_2) {
   int dimension = 2;
   std::vector<std::pair<double, double>> borders{{1, 18}, {-7, 2}};
-  std::vector<int> steps(dimension, 2);
+  std::vector<int> steps(dimension, 1);
 
   ASSERT_NEAR(simpson(function1, borders, steps, 1), -3633.75, 0.0001);
 }
