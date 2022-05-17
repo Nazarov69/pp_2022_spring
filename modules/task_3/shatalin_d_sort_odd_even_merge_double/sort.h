@@ -37,7 +37,7 @@ class oddEvenTask : public task {
     double* array;
     int left, right;
     int* portion;
-public:
+ public:
     oddEvenTask(double* array, int left, int right, int* portion);
     tbb::task* execute() override;
     void print() override {
