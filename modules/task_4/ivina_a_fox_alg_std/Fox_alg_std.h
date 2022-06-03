@@ -1,6 +1,6 @@
 // Copyright 2022 Ivina Anastasiya
-#ifndef MODULES_TASK_2_IVINA_A_FOX_ALG_STD_FOX_ALG_STD_H_
-#define MODULES_TASK_2_IVINA_A_FOX_ALG_STD_FOX_ALG_STD_H_
+#ifndef MODULES_TASK_4_IVINA_A_FOX_ALG_STD_FOX_ALG_STD_H_
+#define MODULES_TASK_4_IVINA_A_FOX_ALG_STD_FOX_ALG_STD_H_
 
 #include <cstddef>
 #include <vector>
@@ -20,4 +20,4 @@ Matrix DenseMatrixMultiplication(const Matrix &a, const Matrix &b);
 Matrix BlockMatrixMultiplication(const Matrix &a, const Matrix &b);
 Matrix Fox(const Matrix &a, const Matrix &b);
 
-#endif  // MODULES_TASK_2_IVINA_A_FOX_ALG_STD_FOX_ALG_STD_H_
+#endif  // MODULES_TASK_4_IVINA_A_FOX_ALG_STD_FOX_ALG_STD_H_

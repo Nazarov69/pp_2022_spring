@@ -5,8 +5,9 @@
 #include <iomanip>
 #include <iostream>
 #include <random>
-#include <thread>
 #include <vector>
+
+#include "../../../3rdparty/unapproved/unapproved.h"
 
 Matrix FillMatrixRandom(const Matrix &m) {
   std::random_device rd;
@@ -155,7 +156,7 @@ Matrix Fox(const Matrix &a, const Matrix &b) {
 
   std::vector<std::thread> thread_vec(num_of_working_threads);
   for (size_t stage = 0; stage < MatrixSize; stage++) {
-    for (int i = 0; i < thread_vec.size(); i++) {
+    for (size_t i = 0; i < thread_vec.size(); i++) {
       thread_vec[i] = std::thread(process, std::ref(tasks[i]), std::ref(newA),
                                   std::ref(newB), (stage), std::ref(c),
                                   std::ref(temp), std::ref(a));
