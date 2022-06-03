@@ -88,7 +88,6 @@ Matrix Fox(const Matrix &a, const Matrix &b) {
   }
 
   const size_t MatrixSize = a.size();  // number of rows or coloumnt
-
   Matrix c(MatrixSize, MatrixRow(MatrixSize, 0));
   auto newA = a;
   auto newB = b;
