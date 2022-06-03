@@ -5,7 +5,7 @@
 #include <random>
 #include <iostream>
 #include <algorithm>
-#include "../../../modules/task_4/yashina_d_Linear_block_filtration/yashina_d_linear_block_filtration.h"
+#include "../../../modules/task_4/yashina_d_linear_block_filtration/yashina_d_linear_block_filtration.h"
 
 double* create_random_kernel(int size_n, double sigma) {
     double* v = new double[size_n*size_n];
