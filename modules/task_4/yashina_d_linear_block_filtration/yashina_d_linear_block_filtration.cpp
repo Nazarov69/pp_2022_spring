@@ -88,6 +88,6 @@ void getParallelOperations(std::vector<std::vector<double>>* image,
                     height, weight);
             }
         });
-        threads[i].join();
     }
+    for (int i = 0; i < nthreads; i++) threads[i].join();
 }
