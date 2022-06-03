@@ -165,7 +165,7 @@ Matrix Fox(const Matrix &a, const Matrix &b) {
       thread_vec[j].join();
     }
 
-    for (const auto task : tasks) {
+    for (const auto &task : tasks) {
       process_B(task, newB, temp);
     }
   }
